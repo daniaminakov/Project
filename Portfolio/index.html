@@ -4,12 +4,122 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Danil Minakov</title>
+    <link rel="shortcut icon" href="/img/logo.ico" type="image/png">
+    <link rel="stylesheet" href="css/normalize.css">
     <link rel="stylesheet" href="css/style.min.css">
+    <link href="https://fonts.googleapis.com/css?family=Bebas+Neue|Open+Sans:400,700&display=swap&subset=cyrillic" rel="stylesheet">
 </head>
 
 <body>
+    <!-- menu-START -->
+    <ul class="menu-wrapper">
+        <li>
+            <a href="" class="menu-item__active"><span data-letters="Главная">Портфолио</span></a>
+        </li>
+        <li>
+            <a href=""><span data-letters="Портфолио">Портфолио</span> </a>
+        </li>
+        <li>
+            <a href=""><span data-letters="Контакты">Контакты</span></a>
+        </li>
+    </ul>
+    <!-- menu-END -->
 
+    <!-- header-START -->
+    <header class="header" id="header">
+        <div class="header-blackout"></div>
+        <div class="header-up">
+            <div class="container">
+                <div class="header-up__box">
+                    <div class="logo">
+                        <a href="">
+                            <img src="/img/logo.svg" alt="Logo"><b>D</b>anil<b>M</b>inakov
+                        </a>
+                    </div>
+                    <div class="navigtion">
+                        <div class="messenger-text">
+                            Мессенджеры
+                            <img src="/img/arrow.svg" alt="Arrow">
+                        </div>
+                        <div class="social">
+                            <a href="https://t.me/Minakov99" class="social-item" target="_blank">
+                                <img src="/img/telegram.svg" alt="Telegram">
+                            </a>
+                            <a href="https://wa.me/380999379231" class="social-item" target="_blank">
+                                <img src="/img/whatsapp.svg" alt="Whatsapp">
+                            </a>
+                        </div>
+                        <div class="burger-menu">
+                            <span style="background-color:#222832;"></span>
+                            <span style="background-color:#222832;"></span>
+                            <span style="background-color:#222832;"></span>
+                            <span style="background-color:#222832;"></span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="parallax-window" data-parallax="scroll" data-image-src="/img/background.jpg">
+            <div class="parallax-letters">
+                <div class="parallax__item" data-speed="1">
+                    <img src="/img/D.png" alt="D">
+                </div>
+                <div class="parallax__item" data-speed="1.8">
+                    <img src="/img/M.png" alt="M">
+                </div>
+            </div>
+            <p class="parallax-text parallax__item" data-speed="1">
+                The Web development
+            </p>
+        </div>
+        <a href="#about" class="arrow-bottom">
+            <img src="/img/arrow-bottom.svg" alt="Arrow Bottom">
+        </a>
+    </header>
+    <!-- header-END -->
+
+    <!-- about-START -->
+    <section class="about" id="about">
+        <div class="container">
+            <div class="about-wrapper">
+                <div class="about-image">
+                    <img src="/img/image-about.jpg" alt="Image about">
+                    <div class="img-border parallax__item" data-speed="1"></div>
+                </div>
+                <div class="about-content">
+                    <h1>Обо мне</h1>
+                    <p class="about-content__text">
+                        Здравствуйте! Я Данил. Веб-разработчик с опытом работы более 1 года. Опыт работы на всех этапах цикла разработки динамических веб-проектов. Имея глубокие знания, включая продвинутые HTML5, CSS3, JavaScript, jQuery, PHP.
+                    </p>
+                    <p class="about-content__info">
+                        <span>Имя:</span> Данил Минаков
+                    </p>
+                    <p class="about-content__info">
+                        <span>Дата рождения:</span> 27 Августа 2002
+                    </p>
+                    <p class="about-content__info">
+                        <span>Национальность:</span> Украина
+                    </p>
+                    <p class="about-content__info">
+                        <span>Имейл:</span> danilminakov333@gmail.com
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- about-END -->
+
+
+    <script src="/js/jquery-3.4.1.min.js"></script>
+    <script src="/js/parallax.min.js"></script>
+    <script>
+        $('.parallax-window').parallax({
+            imageSrc: '../img/background.jpg'
+        });
+    </script>
+    <script type="text/javascript" src="https://spikmi.com/Widget?Id=2914"></script>
+    <script src="/js/main.js"></script>
 </body>
 
 </html>
