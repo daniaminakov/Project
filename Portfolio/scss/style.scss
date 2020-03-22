@@ -24,12 +24,62 @@ html {
 }
 
 body {
+    background: #12161f;
     font-family: 'Open Sans', sans-serif;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    margin: 0;
+    padding: 0;
 }
 
 .container {
     width: 1280px;
     margin: 0 auto;
+}
+
+.scrollup {
+    position: fixed;
+    bottom: 50px;
+    right: 50px;
+    z-index: 9999;
+    display: none;
+    img {
+        width: 50px;
+        &:hover {
+            box-shadow: 0px 0px 20px rgba(135, 41, 48, 0.8);
+            border-radius: 50%;
+        }
+    }
+}
+
+.cd-headline {
+    span {
+        padding: 0 !important;
+    }
+    .cd-words-wrapper {
+        line-height: 1;
+        padding: 0;
+        b {
+            line-height: 1;
+        }
+    }
+}
+
+.blackout {
+    position: absolute;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    z-index: 0;
+    width: 100%;
+    height: 100%;
 }
 
 
@@ -41,10 +91,12 @@ body {
 .header {
     position: relative;
     height: 100vh;
+    max-height: 1000px;
 }
 
 .parallax-window {
     height: 100vh;
+    max-height: 1000px;
     position: relative;
     z-index: 1;
     overflow: hidden;
@@ -124,6 +176,7 @@ body {
     align-items: center;
     margin-right: 60px;
     text-transform: uppercase;
+    color: #000;
     img {
         margin-left: 30px;
         width: 25px;
@@ -381,7 +434,7 @@ li a:hover:after {
 /*about-START*/
 
 .about {
-    padding: 150px 0px 100px;
+    padding: 150px 0px;
     position: relative;
     background: #12161f;
     color: #fff;
@@ -418,12 +471,14 @@ li a:hover:after {
 .about-content {
     width: 600px;
     // border: 1px solid red;
-    h1 {
+    .cd-headline span b {
         text-transform: uppercase;
-        color: rgb(230, 7, 85);
+        color: #e60755;
+        font-size: 40px;
     }
     .about-content__text {
-        color: rgb(216, 216, 216);
+        margin-top: 20px;
+        color: #d8d8d8;
         width: 550px;
         font-size: 18px;
         line-height: 1.5;
@@ -431,10 +486,10 @@ li a:hover:after {
     }
     .about-content__info {
         margin-top: 20px;
-        color: rgb(228, 227, 227);
+        color: #e4e3e3;
         span {
             text-transform: uppercase;
-            color: rgb(235, 64, 124);
+            color: #eb407c;
             margin-right: 5px;
         }
     }
@@ -442,3 +497,209 @@ li a:hover:after {
 
 
 /*about-END*/
+
+
+/*skills-START*/
+
+.skills {
+    padding: 80px 0px;
+    background: #1B212D;
+}
+
+.skills-title {
+    text-align: center;
+    color: #e60755;
+    span {
+        padding: 0 !important;
+    }
+    .cd-words-wrapper {
+        font-size: 42px;
+        b {
+            font-size: 42px;
+            text-transform: uppercase;
+            font-weight: 700;
+        }
+    }
+}
+
+.skills-progress {
+    display: flex;
+    flex-wrap: wrap;
+    padding-top: 70px;
+}
+
+.progress-bar {
+    display: flex;
+    flex-direction: column;
+    width: 50%;
+    color: #fff;
+    margin-bottom: 50px;
+    .progress-bar__name {
+        font-size: 20px;
+        margin-bottom: 10px;
+    }
+}
+
+.progress-bar .progress-bar__line {
+    height: 5px;
+    background: #e8e8e8;
+    position: relative;
+}
+
+.progress-bar>.progress-bar__line>.progress-bar__count {
+    position: absolute;
+    left: 0;
+    top: 0;
+    height: 100%;
+    background: #EB407C;
+    span {
+        content: attr(data-count);
+        position: absolute;
+        top: -30px;
+        right: -20px;
+        &:after {
+            content: '';
+            position: absolute;
+            top: 28px;
+            right: 13px;
+            width: 10px;
+            height: 10px;
+            background: #EB407C;
+            border-radius: 50%;
+        }
+    }
+}
+
+@keyframes animationLoaded {
+    0% {
+        width: 0%;
+    }
+    100% {
+        width: 100%;
+    }
+}
+
+
+/*skills-END*/
+
+
+/*services-START*/
+
+.services {
+    position: relative;
+    padding: 100px 0px;
+    // height: 700px;
+    // background: url(../img/backgroud-section.jpg);
+    // background-size: cover;
+    // background-position: bottom center;
+    // background-repeat: no-repeat;
+    color: #fff;
+    // .blackout {
+    //     opacity: 0.9;
+    //     background: #12161f;
+    // }
+}
+
+.services-title {
+    font-size: 32px;
+}
+
+.services-box {
+    margin-top: 70px;
+    display: flex;
+    justify-content: space-between;
+    .services-item {
+        width: 360px;
+        border: 1px solid #a0a0a0;
+        text-align: center;
+        padding: 20px 10px;
+        border-radius: 5px;
+        .services-item__icon {
+            margin-bottom: 15px;
+            img {
+                height: 60px;
+            }
+        }
+        .services-item__title {
+            font-size: 22px;
+            margin-bottom: 10px;
+            font-weight: 700;
+        }
+        .services-item__text {
+            line-height: 1.7;
+            color: #d8d8d8;
+        }
+    }
+}
+
+
+/*services-END*/
+
+
+/*works-START*/
+
+.works {
+    padding: 80px 0px;
+    background: #1B212D;
+    position: relative;
+    .works-title {
+        font-size: 42px;
+        text-transform: uppercase;
+        font-weight: 700;
+        color: #e60755;
+        text-align: center;
+    }
+    .works-link {
+        margin-top: 50px;
+        display: block;
+        color: #fff;
+        font-size: 24px;
+        text-transform: uppercase;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        img {
+            margin-left: 10px;
+            width: 30px;
+        }
+    }
+}
+
+.works-box {
+    margin-top: 50px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.card {
+    perspective: 1000px;
+    transform-style: preserve-3d;
+}
+
+.card-item {
+    line-height: 0.7;
+    // -webkit-box-shadow: 0px 0px 20px -8px rgba(255, 255, 255, 1);
+    // -moz-box-shadow: 0px 0px 20px -8px rgba(255, 255, 255, 1);
+    // box-shadow: 0px 0px 20px -8px rgba(255, 255, 255, 1);
+    width: 300px;
+    transition: transform .2s ease;
+    img {
+        width: 100%;
+    }
+}
+
+
+/*works-END*/
+
+
+/*footer-START*/
+
+.footer {
+    height: 150px;
+    background: #000;
+}
+
+
+/*footer-END*/

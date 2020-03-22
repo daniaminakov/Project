@@ -7,6 +7,7 @@
     <title>Danil Minakov</title>
     <link rel="shortcut icon" href="/img/logo.ico" type="image/png">
     <link rel="stylesheet" href="css/normalize.css">
+    <link rel="stylesheet" href="/css/headline.css">
     <link rel="stylesheet" href="css/style.min.css">
     <link href="https://fonts.googleapis.com/css?family=Bebas+Neue|Open+Sans:400,700&display=swap&subset=cyrillic" rel="stylesheet">
 </head>
@@ -84,13 +85,18 @@
         <div class="container">
             <div class="about-wrapper">
                 <div class="about-image">
-                    <img src="/img/image-about.jpg" alt="Image about">
+                    <img src="/img/image-about.jpg" class="parallax__item" data-speed="-1" alt="Image about">
                     <div class="img-border parallax__item" data-speed="1"></div>
                 </div>
                 <div class="about-content">
-                    <h1>Обо мне</h1>
+                    <h1 class="cd-headline clip">
+                        <span class="cd-words-wrapper">
+                            <b class="is-visible">Обо мне</b>
+                            <b>About Me</b>
+                        </span>
+                    </h1>
                     <p class="about-content__text">
-                        Здравствуйте! Я Данил. Веб-разработчик с опытом работы более 1 года. Опыт работы на всех этапах цикла разработки динамических веб-проектов. Имея глубокие знания, включая продвинутые HTML5, CSS3, JavaScript, jQuery, PHP.
+                        Здравствуйте! Я Данил. Веб-разработчик с опытом работы более 1,5 лет. Опыт работы на всех этапах цикла разработки динамических веб-проектов. Имея глубокие знания, включая продвинутые HTML5, CSS3, JavaScript, jQuery, PHP.
                     </p>
                     <p class="about-content__info">
                         <span>Имя:</span> Данил Минаков
@@ -102,7 +108,7 @@
                         <span>Национальность:</span> Украина
                     </p>
                     <p class="about-content__info">
-                        <span>Имейл:</span> danilminakov333@gmail.com
+                        <span>Email:</span> danilminakov333@gmail.com
                     </p>
                 </div>
             </div>
@@ -110,6 +116,182 @@
     </section>
     <!-- about-END -->
 
+    <!--skills-START -->
+    <section class="skills">
+        <div class="container">
+            <h1 class="skills-title cd-headline clip">
+                <span class="cd-words-wrapper">
+                    <b class="is-visible">Мои навыки</b>
+                    <b>Professional Skills</b>
+                </span>
+            </h1>
+            <div class="skills-progress">
+                <!-- 1 -->
+                <div class="progress-bar">
+                    <p class="progress-bar__name">
+                        HTML / CSS
+                    </p>
+                    <div class="progress-bar__line" style="width:500px">
+                        <div class="progress-bar__count">
+                            <span data-count="95"></span>
+                        </div>
+                    </div>
+                </div>
+                <!-- 2 -->
+                <div class="progress-bar">
+                    <p class="progress-bar__name">
+                        JavaScript / jQuery / AJAX
+                    </p>
+                    <div class="progress-bar__line" style="width:500px">
+                        <div class="progress-bar__count">
+                            <span data-count="70"></span>
+                        </div>
+                    </div>
+                </div>
+                <!-- 3 -->
+                <div class="progress-bar">
+                    <p class="progress-bar__name">
+                        WordPress
+                    </p>
+                    <div class="progress-bar__line" style="width:500px">
+                        <div class="progress-bar__count">
+                            <span data-count="60"></span>
+                        </div>
+                    </div>
+                </div>
+                <!-- 4 -->
+                <div class="progress-bar">
+                    <p class="progress-bar__name">
+                        PHP / SQL / MySQL
+                    </p>
+                    <div class="progress-bar__line" style="width:500px">
+                        <div class="progress-bar__count">
+                            <span data-count="40"></span>
+                        </div>
+                    </div>
+                </div>
+                <!-- 5 -->
+                <div class="progress-bar">
+                    <p class="progress-bar__name">
+                        Git / Gulp / Preprocessors CSS
+                    </p>
+                    <div class="progress-bar__line" style="width:500px">
+                        <div class="progress-bar__count">
+                            <span data-count="80"></span>
+                        </div>
+                    </div>
+                </div>
+                <!-- 6 -->
+                <div class="progress-bar">
+                    <p class="progress-bar__name">
+                        Photoshop / Figma / Avacode
+                    </p>
+                    <div class="progress-bar__line" style="width:500px">
+                        <div class="progress-bar__count">
+                            <span data-count="85"></span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!--skills-END -->
+
+    <!--services-START -->
+    <section class="services" id="services">
+        <!-- <div class="blackout"></div> -->
+        <div class="container">
+            <h2 class="services-title">
+                Чем я могу быть полезен для вас &darr;
+            </h2>
+            <div class="services-box">
+                <!-- 1 -->
+                <div class="services-item">
+                    <div class="services-item__icon">
+                        <img src="/img/services1.svg" alt="Services">
+                    </div>
+                    <div class="services-item__title">
+                        Разработка сайта
+                    </div>
+                    <div class="services-item__text">
+                        Landing рage, сайт-визитка, интернет-магазин, блог, корпоративный, имиджевый, персональный сайты.
+                    </div>
+                </div>
+                <!-- 2 -->
+                <div class="services-item">
+                    <div class="services-item__icon">
+                        <img src="/img/services2.svg" alt="Services">
+                    </div>
+                    <div class="services-item__title">
+                        Правки и доработки
+                    </div>
+                    <div class="services-item__text">
+                        Разработка мобильной версии сайта, правки в front-end части, доработка существующеего функционала.
+                    </div>
+                </div>
+                <!-- 3 -->
+                <div class="services-item">
+                    <div class="services-item__icon">
+                        <img src="/img/services3.svg" alt="Services">
+                    </div>
+                    <div class="services-item__title">
+                        Работа с различными CMS
+                    </div>
+                    <div class="services-item__text">
+                        Верстка макета + натяжка на CMS, обновление плагинов, обновление CMS, исправления багов.
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!--services-END -->
+
+    <!--works-END -->
+    <section class="works" id="works">
+        <div class="container">
+            <h1 class="works-title">
+                Последнии работы
+            </h1>
+            <div class="works-box">
+                <div class="card js-card">
+                    <div class="card-item">
+                        <img src="img/works-card1.png" alt="Works Card">
+                    </div>
+                </div>
+                <div class="card js-card">
+                    <div class="card-item">
+                        <img src="img/works-card2.png" alt="Works Card">
+                    </div>
+                </div>
+                <div class="card js-card">
+                    <div class="card-item">
+                        <img src="img/works-card3.png" alt="Works Card">
+                    </div>
+                </div>
+                <div class="card js-card">
+                    <div class="card-item">
+                        <img src="img/works-card4.png" alt="Works Card">
+                    </div>
+                </div>
+            </div>
+            <a href="#" class="works-link">
+                Перейти в портфолио
+                <img src="/img/cursor.svg" alt="Cursor"> 
+            </a>
+        </div>
+    </section>
+    <!--works-END -->
+
+    <!--footer-START -->
+    <footer class="footer" id="footer">
+        <div class="container">
+
+        </div>
+    </footer>
+    <!--footer-END -->
+
+    <!-- Scrollup -->
+    <a href="#" class="scrollup"><img src="img/up.svg" alt="Scroll"></a>
 
     <script src="/js/jquery-3.4.1.min.js"></script>
     <script src="/js/parallax.min.js"></script>
@@ -118,6 +300,7 @@
             imageSrc: '../img/background.jpg'
         });
     </script>
+    <script src="/js/headline.js"></script>
     <script type="text/javascript" src="https://spikmi.com/Widget?Id=2914"></script>
     <script src="/js/main.js"></script>
 </body>
