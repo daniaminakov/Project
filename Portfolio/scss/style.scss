@@ -82,6 +82,14 @@ h6 {
     height: 100%;
 }
 
+.title {
+    font-size: 42px;
+    text-transform: uppercase;
+    font-weight: 700;
+    color: #e60755;
+    text-align: center;
+}
+
 
 /*specification-END*/
 
@@ -504,20 +512,17 @@ li a:hover:after {
 .skills {
     padding: 80px 0px;
     background: #1B212D;
-}
-
-.skills-title {
-    text-align: center;
-    color: #e60755;
-    span {
-        padding: 0 !important;
-    }
-    .cd-words-wrapper {
-        font-size: 42px;
-        b {
+    .title {
+        span {
+            padding: 0 !important;
+        }
+        .cd-words-wrapper {
             font-size: 42px;
-            text-transform: uppercase;
-            font-weight: 700;
+            b {
+                font-size: 42px;
+                text-transform: uppercase;
+                font-weight: 700;
+            }
         }
     }
 }
@@ -642,26 +647,91 @@ li a:hover:after {
     padding: 80px 0px;
     background: #1B212D;
     position: relative;
-    .works-title {
-        font-size: 42px;
-        text-transform: uppercase;
-        font-weight: 700;
-        color: #e60755;
-        text-align: center;
-    }
     .works-link {
+        margin-left: auto;
+        margin-right: auto;
+        width: 300px;
+        position: relative;
         margin-top: 50px;
-        display: block;
         color: #fff;
         font-size: 24px;
         text-transform: uppercase;
         display: flex;
         align-items: center;
         justify-content: center;
-        img {
-            margin-left: 10px;
-            width: 30px;
+        transition: all 0.5s;
+        &:hover {
+            color: #EB407C;
+            transition: all 0.5s;
         }
+        svg {
+            position: absolute;
+            top: 5px;
+            right: -40px;
+            width: 30px;
+            height: 30px;
+            animation-name: svgAnimate;
+            animation-duration: 2s;
+            animation-iteration-count: infinite;
+            animation-direction: linear;
+            animation-delay: 1s;
+            path:nth-child(1) {
+                animation-name: fillScale;
+                animation-duration: 2s;
+                animation-iteration-count: infinite;
+                animation-direction: linear;
+                animation-delay: 1s;
+            }
+            path:nth-child(2),
+            path:nth-child(3),
+            path:nth-child(4),
+            path:nth-child(5),
+            path:nth-child(6) {
+                animation-name: fillСhange;
+                animation-duration: 2s;
+                animation-iteration-count: infinite;
+                animation-direction: linear;
+            }
+        }
+    }
+}
+
+@keyframes svgAnimate {
+    0% {
+        width: 30px;
+        height: 30px;
+    }
+    50% {
+        width: 33px;
+        height: 33px;
+    }
+    100% {
+        width: 30px;
+        height: 30px;
+    }
+}
+
+@keyframes fillScale {
+    0% {
+        transform: scale(1);
+    }
+    50% {
+        transform: scale(1.02);
+    }
+    100% {
+        transform: scale(1);
+    }
+}
+
+@keyframes fillСhange {
+    0% {
+        fill: transparent;
+    }
+    50% {
+        fill: #E60755
+    }
+    100% {
+        fill: transparent
     }
 }
 
@@ -680,9 +750,7 @@ li a:hover:after {
 
 .card-item {
     line-height: 0.7;
-    // -webkit-box-shadow: 0px 0px 20px -8px rgba(255, 255, 255, 1);
-    // -moz-box-shadow: 0px 0px 20px -8px rgba(255, 255, 255, 1);
-    // box-shadow: 0px 0px 20px -8px rgba(255, 255, 255, 1);
+    // box-shadow: -20px 20px 20px rgba(255, 255, 255, 0.3);
     width: 300px;
     transition: transform .2s ease;
     img {
@@ -697,8 +765,72 @@ li a:hover:after {
 /*footer-START*/
 
 .footer {
-    height: 150px;
+    padding: 40px 0px;
     background: #000;
+}
+
+.footer-social {
+    margin-left: auto;
+    margin-right: auto;
+    display: flex;
+    width: 240px;
+    justify-content: space-between;
+    .footer-social__item {
+        padding: 10px 10px 8px;
+        border-radius: 50%;
+        border: 3px solid #fff;
+        svg {
+            width: 20px;
+            height: 20px;
+            path {
+                transition: all 0.3s;
+                fill: #fff;
+            }
+        }
+    }
+    .telegram:hover {
+        border: 3px solid #41B4E6;
+        box-shadow: 0px 0px 20px #41B4E6;
+        svg {
+            path {
+                fill: #41B4E6;
+            }
+        }
+    }
+    .instagram:hover {
+        border: 3px solid #E9496A;
+        box-shadow: 0px 0px 20px #E9496A;
+        svg {
+            path {
+                fill: #E9496A;
+            }
+        }
+    }
+    .whatsapp:hover {
+        border: 3px solid #64B161;
+        box-shadow: 0px 0px 20px #64B161;
+        svg {
+            path {
+                fill: #64B161;
+            }
+        }
+    }
+    .google:hover {
+        border: 3px solid #FF4B26;
+        box-shadow: 0px 0px 20px #FF4B26;
+        svg {
+            path {
+                fill: #FF4B26;
+            }
+        }
+    }
+}
+
+.footer-bottom {
+    margin-top: 30px;
+    text-align: center;
+    font-size: 14px;
+    color: #a1a1a1;
 }
 
 
