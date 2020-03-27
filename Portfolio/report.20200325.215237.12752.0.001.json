@@ -4,10 +4,10 @@
     "reportVersion": 1,
     "event": "Allocation failed - JavaScript heap out of memory",
     "trigger": "FatalError",
-    "filename": "report.20200322.183837.11280.0.001.json",
-    "dumpEventTime": "2020-03-22T18:38:37Z",
-    "dumpEventTimeStamp": "1584895117125",
-    "processId": 11280,
+    "filename": "report.20200325.215237.12752.0.001.json",
+    "dumpEventTime": "2020-03-25T21:52:37Z",
+    "dumpEventTimeStamp": "1585165957147",
+    "processId": 12752,
     "cwd": "C:\\Users\\Acer\\Desktop\\Project\\Portfolio",
     "commandLine": [
       "D:\\node.exe",
@@ -50,74 +50,74 @@
       {
         "model": "Intel(R) Core(TM) i5-8300H CPU @ 2.30GHz",
         "speed": 2304,
-        "user": 1376156,
+        "user": 1614390,
         "nice": 0,
-        "sys": 1381437,
-        "idle": 17291812,
-        "irq": 240265
+        "sys": 2231046,
+        "idle": 15457796,
+        "irq": 356265
       },
       {
         "model": "Intel(R) Core(TM) i5-8300H CPU @ 2.30GHz",
         "speed": 2304,
-        "user": 982562,
+        "user": 1492078,
         "nice": 0,
-        "sys": 703593,
-        "idle": 18362968,
-        "irq": 12562
+        "sys": 988031,
+        "idle": 16822843,
+        "irq": 20640
       },
       {
         "model": "Intel(R) Core(TM) i5-8300H CPU @ 2.30GHz",
         "speed": 2304,
-        "user": 1418078,
+        "user": 1990500,
         "nice": 0,
-        "sys": 908828,
-        "idle": 17722218,
-        "irq": 13578
+        "sys": 1748906,
+        "idle": 15563546,
+        "irq": 21890
       },
       {
         "model": "Intel(R) Core(TM) i5-8300H CPU @ 2.30GHz",
         "speed": 2304,
-        "user": 745640,
+        "user": 1318828,
         "nice": 0,
-        "sys": 709171,
-        "idle": 18594312,
-        "irq": 10296
+        "sys": 823234,
+        "idle": 17160890,
+        "irq": 14890
       },
       {
         "model": "Intel(R) Core(TM) i5-8300H CPU @ 2.30GHz",
         "speed": 2304,
-        "user": 1469640,
+        "user": 1679031,
         "nice": 0,
-        "sys": 877921,
-        "idle": 17701562,
-        "irq": 14531
+        "sys": 1229859,
+        "idle": 16394062,
+        "irq": 21093
       },
       {
         "model": "Intel(R) Core(TM) i5-8300H CPU @ 2.30GHz",
         "speed": 2304,
-        "user": 603640,
+        "user": 1105203,
         "nice": 0,
-        "sys": 777562,
-        "idle": 18667921,
-        "irq": 11421
+        "sys": 1057687,
+        "idle": 17140062,
+        "irq": 17406
       },
       {
         "model": "Intel(R) Core(TM) i5-8300H CPU @ 2.30GHz",
         "speed": 2304,
-        "user": 1447078,
+        "user": 1969937,
         "nice": 0,
-        "sys": 822562,
-        "idle": 17779484,
-        "irq": 13453
+        "sys": 1049468,
+        "idle": 16283546,
+        "irq": 20671
       },
       {
         "model": "Intel(R) Core(TM) i5-8300H CPU @ 2.30GHz",
         "speed": 2304,
-        "user": 1076015,
+        "user": 1366046,
         "nice": 0,
-        "sys": 636078,
-        "idle": 18337015,
-        "irq": 11968
+        "sys": 1159187,
+        "idle": 16777703,
+        "irq": 17984
       }
     ],
     "networkInterfaces": [
@@ -134,7 +134,7 @@
         "name": "Беспроводная сеть",
         "internal": false,
         "mac": "a4:c3:f0:78:05:d2",
-        "address": "192.168.1.106",
+        "address": "192.168.1.104",
         "netmask": "255.255.255.0",
         "family": "IPv4"
       },
@@ -166,75 +166,71 @@
   },
   "nativeStack": [
     {
-      "pc": "0x00007ff72b3d1729",
+      "pc": "0x00007ff6f0ae1729",
       "symbol": "std::basic_ostream<char,std::char_traits<char> >::operator<<+10873"
     },
     {
-      "pc": "0x00007ff72b3d5b4c",
+      "pc": "0x00007ff6f0ae5b4c",
       "symbol": "std::basic_ostream<char,std::char_traits<char> >::operator<<+28316"
     },
     {
-      "pc": "0x00007ff72b3d4b08",
+      "pc": "0x00007ff6f0ae4b08",
       "symbol": "std::basic_ostream<char,std::char_traits<char> >::operator<<+24152"
     },
     {
-      "pc": "0x00007ff72b4c369b",
+      "pc": "0x00007ff6f0bd369b",
       "symbol": "v8::base::CPU::has_sse+37723"
     },
     {
-      "pc": "0x00007ff72bcc82de",
+      "pc": "0x00007ff6f13d82de",
       "symbol": "v8::Isolate::ReportExternalAllocationLimitReached+94"
     },
     {
-      "pc": "0x00007ff72bcb0321",
+      "pc": "0x00007ff6f13c0321",
       "symbol": "v8::SharedArrayBuffer::Externalize+833"
     },
     {
-      "pc": "0x00007ff72bb7dbec",
+      "pc": "0x00007ff6f128dbec",
       "symbol": "v8::internal::Heap::EphemeronKeyWriteBarrierFromCode+1436"
     },
     {
-      "pc": "0x00007ff72bb88f90",
+      "pc": "0x00007ff6f1298f90",
       "symbol": "v8::internal::Heap::ProtectUnprotectedMemoryChunks+1312"
     },
     {
-      "pc": "0x00007ff72bb85ac4",
+      "pc": "0x00007ff6f1295ac4",
       "symbol": "v8::internal::Heap::PageFlagsAreConsistent+3204"
     },
     {
-      "pc": "0x00007ff72bb7b353",
+      "pc": "0x00007ff6f128b353",
       "symbol": "v8::internal::Heap::CollectGarbage+1283"
     },
     {
-      "pc": "0x00007ff72bb79b24",
+      "pc": "0x00007ff6f1289b24",
       "symbol": "v8::internal::Heap::AddRetainedMap+2356"
     },
     {
-      "pc": "0x00007ff72bb9adf5",
+      "pc": "0x00007ff6f12aadf5",
       "symbol": "v8::internal::Factory::NewFillerObject+53"
     },
     {
-      "pc": "0x00007ff72b906e19",
+      "pc": "0x00007ff6f1016e19",
       "symbol": "v8::internal::interpreter::JumpTableTargetOffsets::iterator::operator=+4057"
     },
     {
-      "pc": "0x00007ff72c0f404d",
+      "pc": "0x00007ff6f180404d",
       "symbol": "v8::internal::SetupIsolateDelegate::SetupHeap+567949"
     },
     {
-      "pc": "0x00007ff72c0f5151",
-      "symbol": "v8::internal::SetupIsolateDelegate::SetupHeap+572305"
-    },
-    {
-      "pc": "0x0000017c115f0838",
+      "pc": "0x00000026a4076eb3",
       "symbol": ""
     }
   ],
   "javascriptHeap": {
-    "totalMemory": 2151731200,
-    "totalCommittedMemory": 2151731200,
-    "usedMemory": 2141274024,
-    "availableMemory": 49794776,
+    "totalMemory": 2153828352,
+    "totalCommittedMemory": 2153828352,
+    "usedMemory": 2142709360,
+    "availableMemory": 51758000,
     "memoryLimit": 2197815296,
     "heapSpaces": {
       "read_only_space": {
@@ -245,38 +241,38 @@
         "available": 229576
       },
       "new_space": {
-        "memorySize": 2097152,
-        "committedMemory": 2097152,
-        "capacity": 1047488,
-        "used": 192168,
-        "available": 855320
+        "memorySize": 4194304,
+        "committedMemory": 4194304,
+        "capacity": 2094976,
+        "used": 399064,
+        "available": 1695912
       },
       "old_space": {
-        "memorySize": 2083106816,
-        "committedMemory": 2083106816,
-        "capacity": 2077198064,
-        "used": 2075619768,
-        "available": 1578296
+        "memorySize": 2024386560,
+        "committedMemory": 2024386560,
+        "capacity": 2021915504,
+        "used": 2018164912,
+        "available": 3750592
       },
       "code_space": {
         "memorySize": 1212416,
         "committedMemory": 1212416,
-        "capacity": 997536,
-        "used": 997536,
+        "capacity": 954656,
+        "used": 954656,
         "available": 0
       },
       "map_space": {
         "memorySize": 1576960,
         "committedMemory": 1576960,
-        "capacity": 1041360,
-        "used": 1041360,
+        "capacity": 1047280,
+        "used": 1047280,
         "available": 0
       },
       "large_object_space": {
-        "memorySize": 63426560,
-        "committedMemory": 63426560,
-        "capacity": 63387344,
-        "used": 63387344,
+        "memorySize": 122146816,
+        "committedMemory": 122146816,
+        "capacity": 122107600,
+        "used": 122107600,
         "available": 0
       },
       "code_large_object_space": {
@@ -289,24 +285,24 @@
       "new_large_object_space": {
         "memorySize": 0,
         "committedMemory": 0,
-        "capacity": 1047488,
+        "capacity": 2094976,
         "used": 0,
-        "available": 1047488
+        "available": 2094976
       }
     }
   },
   "resourceUsage": {
-    "userCpuSeconds": 437.015,
-    "kernelCpuSeconds": 1404.34,
-    "cpuConsumptionPercent": 15.4205,
-    "maxRss": 4260900864,
+    "userCpuSeconds": 171.906,
+    "kernelCpuSeconds": 406.031,
+    "cpuConsumptionPercent": 88.3696,
+    "maxRss": 5403181056,
     "pageFaults": {
-      "IORequired": 2857880,
+      "IORequired": 1884610,
       "IONotRequired": 0
     },
     "fsActivity": {
-      "reads": 2858,
-      "writes": 211
+      "reads": 2672,
+      "writes": 83
     }
   },
   "libuv": [
@@ -322,8 +318,6 @@
     "CommonProgramW6432": "C:\\Program Files\\Common Files",
     "DriverData": "C:\\Windows\\System32\\Drivers\\DriverData",
     "EXEPATH": "C:\\Program Files\\Git\\bin",
-    "FPS_BROWSER_APP_PROFILE_STRING": "Internet Explorer",
-    "FPS_BROWSER_USER_PROFILE_STRING": "Default",
     "HOME": "C:\\Users\\Acer",
     "HOMEDRIVE": "C:",
     "HOMEPATH": "\\Users\\Acer",
@@ -356,7 +350,7 @@
     "TEMP": "C:\\Users\\Acer\\AppData\\Local\\Temp",
     "TERM": "cygwin",
     "TERM_PROGRAM": "vscode",
-    "TERM_PROGRAM_VERSION": "1.43.0",
+    "TERM_PROGRAM_VERSION": "1.43.1",
     "TMP": "C:\\Users\\Acer\\AppData\\Local\\Temp",
     "USERDOMAIN": "DESKTOP-OQKV1P0",
     "USERDOMAIN_ROAMINGPROFILE": "DESKTOP-OQKV1P0",
@@ -378,19 +372,19 @@
     "C:\\Windows\\System32\\USER32.dll",
     "C:\\Windows\\System32\\win32u.dll",
     "C:\\Windows\\System32\\GDI32.dll",
-    "C:\\Windows\\System32\\gdi32full.dll",
     "C:\\Windows\\SYSTEM32\\dbghelp.dll",
-    "C:\\Windows\\System32\\msvcp_win.dll",
+    "C:\\Windows\\System32\\gdi32full.dll",
     "C:\\Windows\\System32\\ucrtbase.dll",
+    "C:\\Windows\\System32\\msvcp_win.dll",
     "C:\\Windows\\System32\\PSAPI.DLL",
     "C:\\Windows\\System32\\CRYPT32.dll",
     "C:\\Windows\\System32\\MSASN1.dll",
     "C:\\Windows\\System32\\bcrypt.dll",
-    "C:\\Windows\\SYSTEM32\\IPHLPAPI.DLL",
     "C:\\Windows\\SYSTEM32\\USERENV.dll",
+    "C:\\Windows\\SYSTEM32\\IPHLPAPI.DLL",
     "C:\\Windows\\SYSTEM32\\WINMM.dll",
     "C:\\Windows\\System32\\profapi.dll",
-    "C:\\Windows\\SYSTEM32\\WINMMBASE.dll",
+    "C:\\Windows\\SYSTEM32\\winmmbase.dll",
     "C:\\Windows\\System32\\cfgmgr32.dll",
     "C:\\Windows\\System32\\IMM32.DLL",
     "C:\\Windows\\System32\\powrprof.dll",

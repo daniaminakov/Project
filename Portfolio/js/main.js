@@ -1,3 +1,12 @@
+// scrollbar-START
+let scrollbar = document.querySelector('.scrollbar');
+let totalHeight = document.body.scrollHeight - window.innerHeight;
+window.onscroll = function() {
+    let progressHeight = (window.pageYOffset / totalHeight) * 100;
+    scrollbar.style.height = progressHeight + '%';
+};
+// scrollbar-END
+
 // Main paralax letters-START
 function myParallax() {
     this.querySelectorAll(".parallax__item").forEach(layer => {
@@ -9,6 +18,7 @@ function myParallax() {
 }
 document.addEventListener('mousemove', myParallax);
 // Main paralax letters-END
+
 
 // Клик по бургер-меню-START
 function menuClick() {
@@ -35,7 +45,7 @@ $('.scrollup').click(function() {
 // scrollup-END
 
 
-// Клики по навигации меню
+// Клики по навигации меню-START
 $(".arrow-bottom").on("click", function(event) {
     //отменяем стандартную обработку нажатия по ссылке
     event.preventDefault();
@@ -46,20 +56,10 @@ $(".arrow-bottom").on("click", function(event) {
     //анимируем переход на расстояние - top за 1000 мс
     $('body,html').animate({ scrollTop: top }, 1000);
 });
+// Клики по навигации меню-END
 
-// Прогресс-START
 
-var target = $('.skills-progress');
-var targetPos = target.offset().top;
-var winHeight = $(window).height();
-var scrollToElem = targetPos - winHeight;
-$(window).scroll(function() {
-    var winScrollTop = $(this).scrollTop();
-    if (winScrollTop > scrollToElem) {
-        progressSkills();
-    }
-});
-
+// Прогрес-скиллы-START
 function progressSkills() {
     var progressBar = document.querySelectorAll(".progress-bar");
     var time = 2000;
@@ -80,12 +80,10 @@ function progressSkills() {
     });
     progressSkills = function() {};
 };
-
-// Прогресс-END
+// Прогрес-скиллы-END
 
 
 // works-cards-START
-
 let card = new Card('js-card');
 card.run();
 
