@@ -1,3 +1,176 @@
+/*preloader-START*/
+
+.preloader {
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 9999;
+    height: 100%;
+    width: 100%;
+    color: #ADAFB6;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    background: rgb(249, 251, 255);
+    opacity: 1;
+    visibility: visible;
+    transition: all 1s;
+    &.done {
+        opacity: 0;
+        visibility: hidden;
+    }
+}
+
+.preloader-text {
+    margin-top: -30px;
+    margin-left: -15px;
+    font-size: 26px;
+    display: flex;
+    text-transform: uppercase;
+    span {
+        margin-left: 70px;
+    }
+}
+
+.box {
+    height: 32px;
+    width: 32px;
+    position: relative;
+    -webkit-transform-style: preserve-3d;
+    transform-style: preserve-3d;
+    -webkit-transform-origin: 50% 50%;
+    transform-origin: 50% 50%;
+    -webkit-transform: rotateX(60deg) rotateZ(45deg) rotateY(0deg) translateZ(0px);
+    transform: rotateX(60deg) rotateZ(45deg) rotateY(0deg) translateZ(0px);
+}
+
+.box .item {
+    width: 32px;
+    height: 32px;
+    top: 0px;
+    left: 0;
+    position: absolute;
+    -webkit-transform-style: preserve-3d;
+    transform-style: preserve-3d;
+}
+
+.box .item:nth-child(1) {
+    -webkit-transform: translate(100%, 0);
+    transform: translate(100%, 0);
+    -webkit-animation: item1 1s linear infinite;
+    animation: item1 1s linear infinite;
+}
+
+.box .item:nth-child(2) {
+    -webkit-transform: translate(0, 100%);
+    transform: translate(0, 100%);
+    -webkit-animation: item2 1s linear infinite;
+    animation: item2 1s linear infinite;
+}
+
+.box .item:nth-child(3) {
+    -webkit-transform: translate(100%, 100%);
+    transform: translate(100%, 100%);
+    -webkit-animation: item3 1s linear infinite;
+    animation: item3 1s linear infinite;
+}
+
+.box .item:nth-child(4) {
+    -webkit-transform: translate(200%, 0);
+    transform: translate(200%, 0);
+    -webkit-animation: item4 1s linear infinite;
+    animation: item4 1s linear infinite;
+}
+
+.box .item>div {
+    --translateZ: 15.5px;
+    --rotateY: 0deg;
+    --rotateX: 0deg;
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background: #914E52;
+    top: auto;
+    right: auto;
+    bottom: auto;
+    left: auto;
+    -webkit-transform: rotateY(var(--rotateY)) rotateX(var(--rotateX)) translateZ(var(--translateZ));
+    transform: rotateY(var(--rotateY)) rotateX(var(--rotateX)) translateZ(var(--translateZ));
+}
+
+.box .item>div:nth-child(1) {
+    top: 0;
+    left: 0;
+    background: #A5595E;
+}
+
+.box .item>div:nth-child(2) {
+    background: #6F3B3F;
+    right: 0;
+    --rotateY: 90deg;
+}
+
+.box .item>div:nth-child(3) {
+    background: #8B4B4F;
+    --rotateX: -90deg;
+}
+
+.box .item>div:nth-child(4) {
+    background: rgba(102, 25, 32, 0.2);
+    top: 0;
+    left: 0;
+    --translateZ: -90px;
+}
+
+@keyframes item1 {
+    0%,
+    50% {
+        transform: translate(100%, 0);
+    }
+    100% {
+        transform: translate(200%, 0);
+    }
+}
+
+@keyframes item2 {
+    0% {
+        transform: translate(0, 100%);
+    }
+    50% {
+        transform: translate(0, 0);
+    }
+    100% {
+        transform: translate(100%, 0);
+    }
+}
+
+@keyframes item3 {
+    0%,
+    50% {
+        transform: translate(100%, 100%);
+    }
+    100% {
+        transform: translate(0, 100%);
+    }
+}
+
+@keyframes item4 {
+    0% {
+        transform: translate(200%, 0);
+    }
+    50% {
+        transform: translate(200%, 100%);
+    }
+    100% {
+        transform: translate(100%, 100%);
+    }
+}
+
+
+/*preloader-END*/
+
+
 /*specification-START*/
 
 * {
@@ -8,7 +181,7 @@
 
 html {
     overflow-x: hidden;
-    overflow-y: scroll;
+    // overflow-y: hidden;
      ::-webkit-scrollbar {
         width: 0px;
         background: transparent;
@@ -47,7 +220,7 @@ h6 {
     position: fixed;
     bottom: 50px;
     right: 50px;
-    z-index: 9999;
+    z-index: 3;
     display: none;
     img {
         width: 50px;
@@ -97,7 +270,7 @@ h6 {
     width: 7px;
     height: 100%;
     background: rgba(255, 255, 255, 0.05);
-    z-index: 9999;
+    z-index: 3;
 }
 
 .scrollbar {
@@ -107,7 +280,7 @@ h6 {
     width: 7px;
     height: 0%;
     background: linear-gradient(to top, #008aff, #00ffe7);
-    z-index: 9999;
+    z-index: 3;
     animation: scrollbarAnimate 5s linear infinite;
     opacity: 0.7;
     &:after {
@@ -168,7 +341,7 @@ h6 {
     top: 0;
     left: 0;
     width: 100%;
-    z-index: 9999;
+    z-index: 4;
     background: url(../img/background-up.jpg);
     background-size: cover;
     background-position: center;
@@ -339,7 +512,7 @@ h6 {
     height: 100%;
     position: fixed;
     background: rgba($color: #000, $alpha: 0.9);
-    z-index: 100;
+    z-index: 3;
     top: 0;
     left: 0;
     transition: transform 0.5s ease-in-out;
@@ -425,7 +598,7 @@ li a:hover:after {
 }
 
 .menu-wrapper__active {
-    z-index: 998;
+    z-index: 3;
     transform: translate(0, 0);
     transition: transform 0.5s ease-in-out;
 }

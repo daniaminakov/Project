@@ -1,3 +1,16 @@
+// preloader-START
+document.body.onload = function() {
+    setTimeout(function() {
+        let preloader = document.querySelector('#preloader');
+        document.documentElement.style = ("overflow-y", "scroll");
+        if (!preloader.classList.contains('done')) {
+            preloader.classList.add('done');
+        }
+    }, 1000)
+};
+// preloader-END
+
+
 // scrollbar-START
 let scrollbar = document.querySelector('.scrollbar');
 let totalHeight = document.body.scrollHeight - window.innerHeight;
