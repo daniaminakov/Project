@@ -699,7 +699,7 @@ li a:hover:after {
     overflow: hidden;
     width: 400px;
     height: 300px;
-    margin-bottom: 30px;
+    margin-bottom: 35px;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -730,36 +730,36 @@ li a:hover:after {
             }
         }
     }
-    &:nth-child(1) {
-        border: none;
-        background: #ffdc01;
-        // border-top: 5px solid #000;
-        // border-right: 15px solid #000;
-        // border-bottom: 15px solid #000;
-    }
-    &:nth-child(2) {
-        border: none;
-        background: #df7e6f;
-    }
-    &:nth-child(3) {
-        border: none;
-        background: #2176b9;
-    }
-    &:nth-child(4) {
-        border: none;
-        background: #232f3f;
-    }
-    &:nth-child(5) {
-        border: none;
-        background: #AFB4B8;
-    }
-    &:nth-child(6) {
-        border: none;
-        background: #e99a6f;
-    }
+    -webkit-box-shadow: 18px 18px 18px 1px rgba(0, 0, 0, 0.75);
+    -moz-box-shadow: 18px 18px 18px 1px rgba(0, 0, 0, 0.75);
+    box-shadow: 18px 18px 18px 1px rgba(0, 0, 0, 0.75);
     img {
         width: 70%;
     }
+}
+
+.backg-yellow {
+    background: #ffdc01;
+}
+
+.backg-pink {
+    background: #df7e6f;
+}
+
+.backg-blue {
+    background: #2176b9;
+}
+
+.backg-darkblue {
+    background: #232f3f;
+}
+
+.backg-grey {
+    background: #AFB4B8;
+}
+
+.backg-orange {
+    background: #e99a6f;
 }
 
 
