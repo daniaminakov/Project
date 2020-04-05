@@ -21,15 +21,15 @@ window.onscroll = function() {
 // scrollbar-END
 
 // Main paralax letters-START
-function myParallax() {
-    this.querySelectorAll(".parallax__item").forEach(layer => {
-        let speed = layer.getAttribute("data-speed") * 0.01;
-        let distanceX = event.clientX * speed;
-        let distanceY = event.clientY * speed;
-        layer.style.transform = `translate(${distanceX}px, ${distanceY}px)`;
-    });
-}
-document.addEventListener('mousemove', myParallax);
+// function myParallax() {
+//     this.querySelectorAll(".parallax__item").forEach(layer => {
+//         let speed = layer.getAttribute("data-speed") * 0.01;
+//         let distanceX = event.clientX * speed;
+//         let distanceY = event.clientY * speed;
+//         layer.style.transform = `translate(${distanceX}px, ${distanceY}px)`;
+//     });
+// }
+// document.addEventListener('mousemove', myParallax);
 // Main paralax letters-END
 
 
